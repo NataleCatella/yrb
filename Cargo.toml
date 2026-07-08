@@ -8,4 +8,4 @@ members = ["ext/yrb"]
 # copy only because the fork keeps version 0.17.4 — a version bump could not be
 # patched in this way (y-sync 0.4.0 pins yrs 0.17.x).
 [patch.crates-io]
-yrs = { git = "https://github.com/NataleCatella/y-crdt", rev = "8e7100a2220fbde8a3bee2264f775222638dfab6" }
+yrs = { git = "https://github.com/NataleCatella/y-crdt", rev = "03be5476dd70c4206f3def956137e90dc056aedb" }

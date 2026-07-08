@@ -635,7 +635,7 @@ dependencies = [
 [[package]]
 name = "yrs"
 version = "0.17.4"
-source = "git+https://github.com/NataleCatella/y-crdt?rev=8e7100a2220fbde8a3bee2264f775222638dfab6#8e7100a2220fbde8a3bee2264f775222638dfab6"
+source = "git+https://github.com/NataleCatella/y-crdt?rev=03be5476dd70c4206f3def956137e90dc056aedb#03be5476dd70c4206f3def956137e90dc056aedb"
 dependencies = [
  "atomic_refcell",
  "rand",
