@@ -1,3 +1,15 @@
+<!-- FORK NOTICE -->
+> ## ⚠️ Downstream fork — not the upstream project
+>
+> This is a **maintenance fork** of [`y-crdt/yrb`](https://github.com/y-crdt/yrb) (the `y-rb` gem) at tag `v0.7.0` that exists for a single purpose: to build the gem against a **patched `yrs 0.17.4`** (branch [`patch/apply-delete-017-0.17.4`](../../tree/patch/apply-delete-017-0.17.4)).
+>
+> **What changed:** only the workspace `Cargo.toml` (+ `Cargo.lock`). It adds a `[patch.crates-io]` redirecting `yrs` — both the direct dependency *and* `y-sync 0.4.0`'s transitive one — to [`NataleCatella/y-crdt@8e7100a`](https://github.com/NataleCatella/y-crdt/tree/backport/apply-delete-017). No binding/Rust code is modified; the backport keeps the `yrs` public API identical to stock 0.17.4.
+>
+> **Why:** the upstream `y-rb 0.7.0` gem hard-pins the buggy `yrs 0.17.4` (a delete-set bug where deleted content reappears after reload — see the yrs fork notice). A plain gem-version bump can't fix it, and moving off 0.17.4 is blocked by the `y-sync` pin. This fork produces a native gem carrying the fix while staying on 0.17.4.
+>
+> **Not intended for upstream merge.**
+<!-- END FORK NOTICE -->
+
 <p align="center">
   <img alt="Yrb" src="./docs/assets/logo.png" width="300" />
 </p>
